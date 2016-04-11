@@ -1,5 +1,9 @@
+import java.util.ArrayList;
 
 public class StringOutils {
+	
+	private String chars = "abcdefghijklmnopqrstuvwxyz";
+	
 	
 	public boolean palindrome(String word) {
 		 
@@ -53,13 +57,12 @@ public class StringOutils {
 		return result;
 	}
 
-	public String decrypt(){}
+//	public String decrypt(){}
 	
-	public boolean isEqual(){}
+//	public boolean isEqual(){}
 	
-	public String[] charOccurences (String a) {
-		// utilser Python kieme plus petit nombre en boucle
-	}
-
 
 }
+
+
+
