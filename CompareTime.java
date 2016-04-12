@@ -6,6 +6,8 @@ public class CompareTime {
 	private byte mode;
 	private BenchMark bench;
 	private String result;
+	StringBuilder build = new StringBuilder(string);
+	StringBuffer buff = new StringBuffer(string);
 	
 	public CompareTime (byte mode) {
 		this.mode = mode;
@@ -13,9 +15,6 @@ public class CompareTime {
 	}
 	
 	public void doLoop() {
-		//String concat="";
-		StringBuilder build = new StringBuilder(string);
-		StringBuffer buff = new StringBuffer(string);
 		for (int i=0;i<borneSup;i++) {
 			if (mode == 0) {
 				result += string;
@@ -42,6 +41,17 @@ public class CompareTime {
 	
 	public void updateString(Object obj){
 		result = obj.toString();
+	}
+	
+	public String getResult(){
+		if (mode == 0) {
+			return string;
+		}else if (mode == 1){
+			return build.toString();
+		}else if (mode == 2) {
+			return buff.toString();
+		}
+		return false+"";
 	}
 }
 	
