@@ -11,6 +11,16 @@ public class Main {
 			String[] exploded = sOutils.explode(customString);
 			for (int i=0; i<exploded.length;i++){
 				System.out.println(exploded[i]);}
+	
+	
+	
+			CompareTime concat = new  CompareTime((byte) 0);
+			CompareTime build = new  CompareTime((byte)1);
+			CompareTime buff = new  CompareTime((byte)2);
+/* date de naisse
+ * clalc année mois avant pension
+ * date, calendar,greg Calendar
+ */
+		
 	}
-
 }
